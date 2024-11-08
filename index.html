@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felicity's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <!-- header -->
+  <header>
+    <nav>
+      <div class="logo">
+          MyLogo
+      </div>
+      <ul class="navlink" id="navlink">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#interest">Interest</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </nav>
+  </header>
+
+  <!-- main content -->
+  <main>
+
+    <!-- home -->
+    <section id="home" class="home-section">
+      <div class="home-container">
+        <div class="home-info">
+          <h4>Hi! I'm Felicity Catimbang 👋</h4>
+          <h1>Future, UI/UX Designer</h1>
+          <div class="home-button">
+            <button id="contactButton" class="cnt-btn">Contact</button>
+          </div>          
+        </div>
+      </div>
+    </section>
+
+    <!-- about me -->
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <div class="about-info">
+          <h1>About Me</h1>
+          <p class="about-desc">
+              I’m Felicity Catimbang, a third-year Computer Science Student at 
+              Cavite State University - Bacoor Campus. I’m passionate about creating user-centered, visually 
+              engaging designs in UI/UX 🎨 and am excited to bring my ideas to life through innovative digital experiences 💻.
+          </p>
+      
+          <!-- Social Icons -->
+          <div class="social-icons">
+              <a href="https://www.facebook.com/felisety.catimbang" target="https://www.facebook.com/felisety.catimbang" class="social-icon">
+                  <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="hhttps://www.instagram.com/flcty_ctmbng23/?igsh=MTlrcnluMTMzdXM2cA%3D%3D" target="hhttps://www.instagram.com/flcty_ctmbng23/?igsh=MTlrcnluMTMzdXM2cA%3D%3D" class="social-icon">
+                  <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://github.com/yourprofile" target="_blank" class="social-icon">
+                  <i class="fab fa-github"></i>
+              </a>
+          </div>
+      </div>
+      
+        <div class="my-photo">
+          <img src="myphoto.jpg" alt="myPhoto" srcset="">
+        </div>
+      </div>
+    </section>
+
+    <!-- interest -->
+    <section id="interest" class="interest-section">
+      <h1 class="">Interest</h1>
+      <div class="interest-container">
+        <div class="interest-item">
+          <i class="fas fa-utensils"></i>
+          <h6><strong>Cooking</strong></h6>
+          <p class="interest-description">Exploring new recipes and creating delicious meals.</p>
+        </div>
+        <div class="interest-item">
+          <i class="fas fa-book-open"></i>
+          <h6><strong>Reading Novels</strong></h6>
+          <p class="interest-description">Diving into fictional worlds and captivating stories.</p>
+        </div>
+        <div class="interest-item">
+          <i class="fas fa-paint-brush"></i>
+          <h6><strong>UI/UX Design</strong></h6>
+          <p class="interest-description">Designing intuitive and user-friendly digital experiences.</p>
+        </div>
+        <div class="interest-item">
+          <i class="fas fa-globe"></i>
+          <h6><strong>Browsing the Internet</strong></h6>
+          <p class="interest-description">Discovering new ideas, trends, and staying connected.</p>
+        </div>
+      </div>
+    </section>    
+
+    <!-- contact section -->
+    <section id="contact" class="contact-section">
+      <div class="contact-container">
+        <h1>My Contact</h1>
+        <div class="contact-info">
+          <h1>Get in Touch with me!</h1>
+          <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>felicity@example.com</span>
+          </div>
+          <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <span>Phone: +123 456 7890</span>
+          </div>
+      </div>
+        <!-- Social Icons -->
+        <div class="cnt-social-icons">
+          <a href="https://www.facebook.com/felisety.catimbang" target="https://www.facebook.com/felisety.catimbang" class="cnt-social-icon">
+              <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="hhttps://www.instagram.com/flcty_ctmbng23/?igsh=MTlrcnluMTMzdXM2cA%3D%3D" target="hhttps://www.instagram.com/flcty_ctmbng23/?igsh=MTlrcnluMTMzdXM2cA%3D%3D" class="cnt-social-icon">
+              <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://github.com/yourprofile" target="_blank" class="cnt-social-icon">
+              <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote">
+      <div class="quote-container">
+          <h3>"The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well."</h3>
+          <p>- Ralph Waldo Emerson</p>
+      </div>
+    </section>
+  
+
+  </main>
+
+
+  <!-- JavaScript for toggle functionality -->
+  <script>
+
+    // menu toggle
+    function toggleMenu() {
+      const navlink = document.getElementById('navlink');
+      navlink.classList.toggle('show');
+    }
+
+    // Close the menu when any nav link is clicked
+    const navLinks = document.querySelectorAll('.navlink a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const navlink = document.getElementById('navlink');
+            navlink.classList.remove('show'); // Close the menu when link is clicked
+        });
+    });
+
+
+    // contact button 
+    document.getElementById("contactButton").addEventListener("click", function() {
+      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+    });
+
+  </script>
+</body>
+</html>

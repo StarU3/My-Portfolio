@@ -1,0 +1,103 @@
+@media (max-width: 767px) {
+
+    /* Header Styles */
+    header {
+        padding: 20px 5px;
+    }
+
+    .navlink {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: var(--primary-color);
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        padding: 0px 20px;
+    }
+
+    .navlink.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+
+    .home-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-info h4 {
+        font-size: .9em;
+    }
+    
+    .cnt-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+
+    /* about style */
+    .about-container {
+        position: relative;
+        top: 10px;
+        bottom: 10px;
+    }
+
+
+    .about-info h1 {
+        font-size: 28px;
+    }
+
+    .about-desc {
+        font-size: 14px;
+    }
+
+    .my-photo img {
+        width: 250px;
+        height: 250px;
+    }   
+
+    .contact-container h1 {
+        font-size: 28px;
+    }
+
+    .contact-item {
+        font-size: 16px;
+    }
+
+    .contact-item i {
+        font-size: 18px;
+    }
+
+    .social-icon {
+        font-size: 20px;
+    }
+
+    .interest-item {
+        width: 200px;
+    }
+
+    /* Container styling */
+    .interest-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .quote-container {
+        max-width: 500px;
+    }
+    
+    /* Styling the Quote Text */
+    .quote-container h3 {
+        font-size: 1rem;
+    }
+    .quote-container p {
+        font-size: 1rem;
+    }
+}
