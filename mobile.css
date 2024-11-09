@@ -7,13 +7,14 @@
 
     .navlink {
         position: absolute;
-        top: 60px;
+        z-index: -1;
+        top: 90px;
         right: 0;
         background-color: var(--primary-color);
         flex-direction: column;
         width: 100%;
         display: none;
-        padding: 0px 20px;
+        padding: 0px 30px;
     }
 
     .navlink.show {
